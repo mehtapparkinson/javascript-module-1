@@ -14,8 +14,13 @@ function createGreeting (name) {
 }
 
 const greeting1 = createGreeting (uppercase (mentor1))
+const greeting2 = createGreeting (uppercase (mentor2))
+const greeting3 = createGreeting (uppercase (mentor3))
+const greeting4 = createGreeting (uppercase (mentor4))
+const greeting5 = createGreeting (uppercase (mentor5))
+```
 
 
-console.log (greeting1)
+console.log (greeting1, greeting2, greeting3, greeting4, greeting5)
 
 
