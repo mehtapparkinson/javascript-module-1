@@ -10,8 +10,13 @@ let n = 10;
 
 
 function sumTillNum(num){
-	return num+(num+1)/2
-
+	let number = 0
+	let total = 0
+	while (number <= num) {
+		total = total + number;
+		number ++
+	}
+	return total;
 }
 
 console.log("Sum from 0 to " + n + " is: " + sumTillNum(n));
