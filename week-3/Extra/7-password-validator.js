@@ -21,8 +21,24 @@ Expected Result:
 PasswordValidationResult=  [false, false, false, false, true]
 
 */
+function checkLetter (password, letters) {
+  for (let index = 0; index < password.length; index++) {
+    if (letters.includes(password[index])) {
+      return true
+    }
+    
+  }
+  return false
+}
 
 function validatePasswords(passwords) {
+  let letters =  [ "A", "B", "C", "D" ,"E", "F" , "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U" ,"V", "W", "Y", "X", "Z"]
+  passwords.map((pass) => {
+    return pass.length >=5 && checkLetter(pass, letters) && checkLetter(pass, letters.map(letter => { 
+      return letter.toLowerCase() 
+    }))
+    &&
+  })
 
 }
 

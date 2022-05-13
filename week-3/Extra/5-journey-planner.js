@@ -7,7 +7,13 @@
   NOTE: only the names should be returned, not the means of transport.
 */
 
-function journeyPlanner() {
+function journeyPlanner(locationsList, transport) {
+  let locationsByTransport = locationsList.filter((location) => {
+    return location.includes(transport)
+  })
+  return locationsByTransport.map((location) => {
+    return location[0]
+  } )
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== */

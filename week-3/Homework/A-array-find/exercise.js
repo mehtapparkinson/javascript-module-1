@@ -16,9 +16,6 @@ var names = ["Rakesh", "Antonio", "Alexandra", "Andronicus", "Annam", "Mikey", "
 
 console.log (names.find(findLongNameThatStartsWithA))
 
-var longNameThatStartsWithA = findLongNameThatStartsWithA(names);
-
-console.log(longNameThatStartsWithA);
 
 /* EXPECTED OUTPUT */
 // "Alexandra"

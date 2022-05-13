@@ -14,7 +14,24 @@ You don't have to worry about making this algorithm work fast! The idea is to ge
 "think" like a computer and practice your knowledge of basic JavaScript.
 */
 
-function sortAges(arr) {}
+function sortAges(arr) {
+  let ages = arr.filter(element => {
+    return typeof(element) === "number"
+  })
+  ages.sort((a, b) => {
+    if ( a >= b )  {
+      return 1
+    }
+    else {
+      return -1
+    }
+  }
+  )
+  return ages
+  
+}
+
+
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 

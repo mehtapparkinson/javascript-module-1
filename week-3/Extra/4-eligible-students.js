@@ -7,12 +7,6 @@
   - Returns an array containing only the names of the who have attended AT LEAST 8 classes
 */
 
-function eligibleStudents() {
-
-}
-
-/* ======= TESTS - DO NOT MODIFY ===== */
-
 const attendances = [
   ["Ahmed", 8],
   ["Clement", 10],
@@ -21,6 +15,19 @@ const attendances = [
   ["Tayoa", 11],
   ["Nina", 10]
 ]
+
+function eligibleStudents(list){ 
+  let newlist = list.filter((studentandlecture) => {
+    return studentandlecture[1] >= 8
+  })
+  
+  return newlist.map((studentandlecture) => {
+    return studentandlecture[0]
+  })
+}
+
+/* ======= TESTS - DO NOT MODIFY ===== */
+
 
 const util = require('util');
 

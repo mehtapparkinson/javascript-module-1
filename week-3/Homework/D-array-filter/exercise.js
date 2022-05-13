@@ -6,14 +6,14 @@
   - Do not edit any of the existing code
 */
 
-var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], null, [1], false, "whoops"];
+var pairsByIndexRaw = [[0, 3], [1, 2], [2, 1], [1], null, false, "whoops"];
 
-function filterpairs (pair) {
- if (pair.length ===  2)
+var pairsByIndex = pairsByIndexRaw.filter(checkIfPair); // Complete this statement
 
-} 
-
-var pairsByIndex = pairsByIndexRaw.filter(filterpairs); // Complete this statement
+function checkIfPair (index) {
+  
+  return index !== null && index.length === 2 ;
+}
 
 
 var students = ["Islam", "Lesley", "Harun", "Rukmini"];

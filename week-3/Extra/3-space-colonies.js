@@ -8,11 +8,6 @@
   NOTE: don't include any element that is not a "family".
 */
 
-function colonisers() {
-
-}
-
-/* ======= TESTS - DO NOT MODIFY ===== */
 
 const voyagers = [
   "Adam family",
@@ -28,6 +23,19 @@ const voyagers = [
   "Avery family",
   "Archer family"
 ];
+
+
+function colonisers(names) {
+  return  names.filter(name => { 
+    return name[0] === "A" && name.includes("family")
+  })
+  
+}
+
+
+/* ======= TESTS - DO NOT MODIFY ===== */
+
+
 
 const util = require('util');
 
